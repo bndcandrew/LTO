@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ltoregistration.css">
+    <title>LTO Registration</title>
+
+    
+    <body>
+        <section class="header">
+            <H1>REPUBLIC OF THE PHILIPPINES<br>
+            DEPARTMENT OF TRANSPORTATION AND COMMUNICATION<br>
+            LAND TRANSPORTATION OFFICE</H1>
+            <p><i>East Avenue, Quezon City</i></p>
+        </section>
+
+        <section class="form">
+            <form id="ltoregistration" action="LTOregistration.php" method="post" class="ltoregistration">
+               
+                <div class="instructions">
+                <h2>INSTRUCTIONS</h2>
+                <p>1. ACCOMPLISH THE FORM CORRECTLY</p>
+                <p>2. PRINT DATA LEGIBLY IN CAPITAL LETTERS</p>
+                <p>3. SUBMIT THIS FORM TO THE CSR/EVALUATOR TOGETHER WITH THE REQUIRED SUPPORTING DOCUMENTS</p>
+                <br><hr><br>
+                <h2>APPLICATION FOR DRIVER'S LICENSE</h2><br>
+                </div>
+
+              
+              <div class="container2">
+                <p class="title">NAME
+                    <span class="italic"><i>(Family name, First name, Middle name)</i></span>
+                    
+                </p>
+              </div>
+              <br>
+                
+                
+              <div class="container">
+                <div class="row">
+                    
+                        <label for="lastname">LASTNAME</label>
+                        <input type="text" id="lastname" name="lastname">
+                    
+                        <label for="firstname">FIRSTNAME</label>
+                        <input type="text" id="firstname" name="firstname">
+                    
+                        <label for="middlename">MIDDLENAME</label>
+                        <input type="text" id="middlename" name="middlename">
+                    
+                </div>
+            </div>
+            <br>
+                <br><hr><br>
+        
+     <div class="container">
+        <div class="address">
+            <p class="title">PRESENT ADDRESS
+                <span class="italic"><i>(No., Street, City/Municipality, Province)</i></span>
+            </p><br>
+
+          <div class="center-column">
+            <label for="street">Street</label>
+            <input type="text" id="street" name="street">
+        </div>
+        </div>
+    </div>
+    
+    <div class="container">
+      <div class="dropdown-container">
+          <div class="province-dropdown">
+              <span>SELECT A PROVINCE</span>
+              <select name='province-dropdown' id="province-dropdown" onchange="showPlacesDropdown('province-dropdown', 'place-select1')">
+                  <option value="">Select a Region</option>
+                  <option value="NCR">METRO-MANILA</option>
+                  <option value="CAVITE">CAVITE</option>
+                  <option value="LAGUNA">LAGUNA</option>
+                  <option value="BATANGAS">BATANGAS</option>
+                  <option value="RIZAL">RIZAL</option>
+                  <option value="QUEZON">QUEZON</option>
+              </select>
+          </div>
+          
+          <div class="city-dropdown">
+              <span>SELECT A CITY/MUNICIPALITY</span>
+              <select name="city-dropdown" id="place-select1">
+                  <option value="">Select a City/Municipality</option>
+              </select>
+          </div>
+      </div>
+  </div>
+                    <br><br>
+
+                    <br><hr><br><br>
+                  <div class="container">
+                    <div class="left-column">
+                     <label for="Cont"><b>Tel.NO. / CP NO.:</b></label> <br>
+                      <input type="tel" id="Cont" name="Cont" placeholder="Enter Contact"><br>
+                      <p></p>
+                      </div>
+
+                      <div class="center-column">
+                      <label for="Tin"><b>TIN:</b></label> <br><input type="tin" id="Tin" name="Tin" placeholder="xxx-xxx-xxx-xxx"><br>
+                      <p></p>
+                      </div>
+
+                      <div class="right-column">
+                      <label for="Nationality"><b>NATIONALITY:</b></label> <br><input type="text" id="Nationality" name="Nationality"><br>
+                      <p></p>
+                      </div>
+                  </div>
+                  
+                  
+                    
+                  <br><hr><br>
+                  <div class="container">
+                    <div class="left-column">                      
+                      <span><b>GENDER</b></span><br>
+                      <label for="male">
+                        <input type="radio" id="male" name="gender" value="male">
+                        Male
+                    </label><br>
+
+                       <label for="female">
+                    <input type="radio" id="female" name="gender" value="female">
+                        Female
+                    </label><br>
+              
+                      <p></p>
+                        </div>
+
+                      <div class="center-column">
+                      <label for="bday"><b>BIRTH DATE</b><br></label><input type="date" id="bday" name="bday"><br>
+                      <p></p>
+                      </div>
+                    
+                    <div class="right-column">
+                      <label for="height"><b>HEIGHT(cm)</b></label><br> <input type="text" id="height" name="height">
+                      <p></p>
+                      <label for="weight"><b>WEIGHT(kg)</b></label><br> <input type="text" id="weight" name="weight">
+                      <p></p>
+                
+                    </div>
+                    </div>
+           
+                    
+                </div>
+                <br><hr><br>
+
+                    <h2 class="toa">TYPE OF APPLICATION(TOA)</h2>
+                    
+                <div class="container">
+                    <div class="left-column">
+
+                      <label for="A">
+                        <input type="radio" id="A" name="app" value="A">
+                        A. NEW
+                      </label>
+
+                      <label for="B">
+                        <input type="radio" id="B" name="app" value="B">
+                        B. DELINQUENT/DORMANT LICENSE<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        C. CHANGE CLASSIFICATION    
+                      </label>
+
+                      <label for="C1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" id="C1" name="app" value="C1">
+                        PROF TO NON-PROF 
+                      </label>
+
+                      <label for="C2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" id="C2" name="app" value="C2">
+                        NON-PROF TO PROF 
+                      </label>
+
+                    </div>
+                
+                    <div class="center-column">
+
+                      <label for="D">
+                        <input type="radio" id="D" name="app" value="D">
+                        D. FOREIGN LIC. CONVERSION
+                      </label>
+
+                      <label for="E">
+                        <input type="radio" id="E" name="app2" value="E">
+                        E.RENEWAL
+                      </label>
+
+                      <label for="F">
+                        <input type="radio" id="F" name="app" value="F">
+                        F. ADDITIONAL RESTRICTION CODE
+                      </label>
+                      
+                      <label for="G">
+                        <input type="radio" id="G" name="app" value="G">
+                        G. DUPLICATE 
+                      </label>
+
+                      <label for="H">
+                        <input type="radio" id="H" name="app" value="H">
+                        H. REVISION OF RECORDS
+                      </label>
+
+                      <label for="H1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" id="H1" name="app" value="H1">
+                        CHANGE ADDRESS
+                      </label>
+                    </div>
+                
+                    <div class="right-column">
+
+                        <label for="H2">
+                            <input type="radio" id="H2" name="app" value="H2">
+                            CHANGE CIVIL STATUS
+                        </label>
+
+                        <label for="H3">
+                            <input type="radio" id="H3" name="app" value="H3">
+                            CHANGE NAME
+                        </label>
+
+                        <label for="H4">
+                            <input type="radio" id="H4" name="app" value="H4">
+                            CHANGE DATE OF BIRTH
+                        </label>
+
+                        <label for="H5">
+                            <input type="radio" id="H5" name="app" value="H5">
+                            OTHERS
+                        </label>
+
+                    </div>
+                  </div><BR>
+                    <br><hr><br>
+
+
+
+                    <script>
+                      // Get the radio buttons for "New" and "Renewal"
+                      const newRadio = document.getElementById("A");
+                      const renewalRadio = document.getElementById("E");
+                  
+                      // Add event listeners to both radio buttons
+                      newRadio.addEventListener("change", function () {
+                          if (newRadio.checked) {
+                              // Uncheck "Renewal" if "New" is checked
+                              renewalRadio.checked = false;
+                          }
+                      });
+                  
+                      renewalRadio.addEventListener("change", function () {
+                          if (renewalRadio.checked) {
+                              // Uncheck "New" if "Renewal" is checked
+                              newRadio.checked = false;
+                          }
+                      });
+                  </script>
+
+
+                    
+            <div class="container">
+
+              <div class="left-column"><p><b>TYPE OF LICENSE APPLIED(TLA) FOR</b></p>
+
+                <label for="T1">
+                    <input type="radio" id="T1" name="license" value="STUDENT">
+                    1. STUDENT PERMIT
+                </label><br>
+
+                <label for="T2">
+                    <input type="radio" id="T2" name="license" value="NON-PROFESSIONAL">
+                    2. NON-PROFESSIONAL
+                </label><br>
+
+        
+                <label for="T3">
+                    <input type="radio" id="T3" name="license" value="PROFESSIONAL">
+                    3. PROFESSIONAL
+                </label><br>
+
+              <label for="T4">
+                    <input type="radio" id="T4" name="license" value="CONDUCTOR">
+                    4. CONDUCTOR
+                </label></div>
+
+                <div class="center-column"><p><b>DRIVING SKILL ACQUIRED OR<BR>WILL BE ACQUIRED THRU</b></p>
+
+                  <label for="D1">
+                      <input type="radio" id="D1" name="skill" value="D1">
+                      1. DRIVING SCHOOL
+                  </label><br>
+  
+                  <label for="D2">
+                      <input type="radio" id="D2" name="skill" value="D2">
+                      2. LICENSED PRIVATE PERSON
+                  </label></div><br>
+                
+                <div class="right-column"><p><b>EDUCATIONAL ATTAINMENT (EA)</b></p>
+
+                    <label for="E1">
+                        <input type="radio" id="E1" name="ea" value="E1">
+                        1. INFORMAL SCHOOLING
+                    </label>
+    
+                    <label for="E2">
+                        <input type="radio" id="E2" name="ea" value="E2">
+                        2. ELEMENTARY
+                    </label>
+    
+                    <label for="E3">
+                        <input type="radio" id="E3" name="ea" value="E3">
+                        3. HIGH SCHOOL
+                    </label>
+                  
+                  
+                    <label for="E4">
+                        <input type="radio" id="E4" name="ea" value="E4">
+                        4. VOCATIONAL
+                    </label>
+
+                    <label for="E5">
+                      <input type="radio" id="E5" name="ea" value="E5">
+                      5. COLLEGE
+                   </label>
+
+                   <label for="E6">
+                    <input type="radio" id="E6" name="ea" value="E6">
+                      6. POST GRADUATE
+                 </label></div>
+                
+            </div>  
+            <br>
+              <br><hr><br>
+              <div class="container">
+
+                <div class="left-column"><p><b>CIVIL STATUS</b></p>
+  
+                  <label for="SINGLE">
+                      <input type="radio" id="SINGLE" name="cs" value="SINGLE">
+                      1. SINGLE
+                  </label><br>
+  
+                  <label for="MARRIED">
+                      <input type="radio" id="MARRIED" name="cs" value="MARRIED">
+                      2. MARRIED
+                  </label><br>
+  
+          
+                  <label for="WIDOW">
+                      <input type="radio" id="WIDOW" name="cs" value="WIDOW">
+                      3. WIDOW
+                  </label><br>
+  
+  
+                <label for="SEP">
+                      <input type="radio" id="SEP" name="CS" value="SEP">
+                      4. SEPARATED
+                  </label></div>
+  
+              <div class="center-column">
+                    <p><b>HAIR</b></p>
+                    
+                    <label for="BLACK">
+                      <input type="radio" id="BLACK" name="hair" value="BLACK">
+                      1. BLACK
+                    </label><br>
+                    
+                    <label for="BROWN">
+                      <input type="radio" id="BROWN" name="hair" value="BROWN">
+                      2. BROWN
+                    </label><br>
+                    
+                    <label for="BLONDE">
+                      <input type="radio" id="BLONDE" name="hair" value="BLONDE">
+                      3. BLONDE
+                    </label><br>
+                    
+                    <label for="GRAY">
+                      <input type="radio" id="GRAY" name="hair" value="GRAY">
+                      4. GRAY
+                    </label><br>
+                    
+              
+                    <label>
+                      <input type="radio" id="OTHERS_RADIO" name="hair" value="OTHERS">
+                      5. OTHERS
+                    </label><br>
+                    
+                   
+                    <input type="text" id="OTHERS" name="hair"><br>
+                    </div>
+                    <div class="right-column">
+                      <p><b>EYES</b></p>
+                      
+                      <label for="BLACK">
+                        <input type="radio" id="BLACK" name="eyes" value="BLACK">
+                        1. BLUE
+                      </label><br>
+                      
+                      <label for="BROWN">
+                        <input type="radio" id="BROWN" name="eyes" value="BROWN">
+                        2. BROWN
+                      </label><br>
+                      
+                      <label for="GRAY">
+                        <input type="radio" id="GRAY" name="eyes" value="GRAY">
+                        3. GRAY
+                      </label><br>
+                      
+                      <label>
+                        <input type="radio" id="OTHERS_RADIO2" name="eyes" value="OTHERS">
+                        4. OTHERS
+                      </label><br>
+                               
+                      <input type="text" id="OTHERS2" name="eyes"><br>
+                    </div>
+                  </div>
+                  
+
+                  
+            <script>
+                    // JavaScript to update the "OTHERS" input field value for Hair
+                    const hairRadioButtons = document.querySelectorAll('input[name="hair"]');
+                    const hairOthersInput = document.getElementById("OTHERS");
+                  
+                    hairRadioButtons.forEach(function(radioButton) {
+                      radioButton.addEventListener("change", function() {
+                        if (radioButton.value === "OTHERS") {
+                          hairOthersInput.disabled = false;
+                          hairOthersInput.value = ""; // Clear the input initially
+                        } else {
+                          hairOthersInput.disabled = true;
+                          hairOthersInput.value = radioButton.value; // Use the selected value
+                        }
+                      });
+                    });
+                  
+                    // JavaScript to update the "OTHERS" radio button value for Hair
+                    hairOthersInput.addEventListener("input", function() {
+                      const othersRadio = document.getElementById("OTHERS_RADIO");
+                      if (othersRadio.checked) {
+                        othersRadio.value = this.value;
+                      }
+                    });
+                  
+                    // Disable the Hair "Others" input initially
+                    hairOthersInput.disabled = true;
+                  
+                    // JavaScript to update the "OTHERS" input field value for Eyes
+                    const eyesRadioButtons = document.querySelectorAll('input[name="eyes"]');
+                    const eyesOthersInput = document.getElementById("OTHERS2");
+                  
+                    eyesRadioButtons.forEach(function(radioButton) {
+                      radioButton.addEventListener("change", function() {
+                        if (radioButton.value === "OTHERS") {
+                          eyesOthersInput.disabled = false;
+                          eyesOthersInput.value = ""; // Clear the input initially
+                        } else {
+                          eyesOthersInput.disabled = true;
+                          eyesOthersInput.value = radioButton.value; // Use the selected value
+                        }
+                      });
+                    });
+                  
+                    // JavaScript to update the "OTHERS" radio button value for Eyes
+                    eyesOthersInput.addEventListener("input", function() {
+                      const othersRadio = document.getElementById("OTHERS_RADIO2");
+                      if (othersRadio.checked) {
+                        othersRadio.value = this.value;
+                      }
+                    });
+                  
+                    // Disable the Eyes "Others" input initially
+                    eyesOthersInput.disabled = true;
+                  </script>      
+          
+              <br><hr><br>
+          <div class="container">
+            <div class="left-column">
+              <p><b>BLOOD TYPE</b></p>
+              <select name="blood" id="blood">
+                  <option value="">SELECT A BLOOD TYPE</option>
+                  <option value="O+">O+</option>
+                  <option value="O-">O-</option>
+                  <option value="A+">A+</option>
+                  <option value="A-">A-</option>
+                  <option value="B+">B+</option>
+                  <option value="B-">B-</option>
+                  <option value="AB+">AB+</option>
+                  <option value="AB-">AB-</option>
+              </select></div>
+
+    
+              <div class="center-column"><p><b>ORGAN DONOR</b></p>
+                <label for="YES">
+                  <input type="radio" id="YES" name="organdonor" value="YES">
+                  YES
+              </label><br>
+              
+              <label for="NO">
+                  <input type="radio" id="NO" name="organdonor" value="NO">
+                  NO
+              </label><br>
+    
+             
+            </label></div><br>
+    
+              
+                </div>
+              </div>
+              <br><hr><br>
+          <div class="container">
+            <div class="left-column"><p><b>BUILT</b></p>
+              <label for="L">
+                <input type="radio" id="L" name="built" value="L">
+                1. LIGHT
+            </label><br>
+
+            <label for="M">
+                <input type="radio" id="M" name="built" value="M">
+                2. MEDIUM
+            </label><br>
+
+            <label for="H">
+              <input type="radio" id="H" name="built" value="H">
+              3. HEAVY
+          </label></div><br>
+
+          <div class="center-column"><p><b>COMPLEXION</b></p>
+            <label for="L">
+              <input type="radio" id="L" name="complexion" value="L">
+              1. LIGHT
+          </label><br>
+
+          <label for="F">
+              <input type="radio" id="F" name="complexion" value="F">
+              2. FAIR
+          </label><br>
+
+          <label for="D">
+            <input type="radio" id="D" name="complexion" value="D">
+            3. DARK
+        </label></div><br>
+
+          
+            </div>
+          </div>
+          
+          <br><hr><br>
+         
+          <div class="centered-container">
+            <div class="container">
+                <p><b>BIRTHPLACE</b><i>(City/Municipality, Province)</i></p>
+            </div>
+
+            <div class="dropdown-container">
+              <div class="province-dropdown">
+                  <span>SELECT A PROVINCE</span>
+                  <select name="province-dropdown2" id="province-dropdown2" onchange="showPlacesDropdown('province-dropdown2', 'place-select2')">
+                      <option value="">Select a Region</option>
+                      <option value="NCR">METRO-MANILA</option>
+                      <option value="CAVITE">CAVITE</option>
+                      <option value="LAGUNA">LAGUNA</option>
+                      <option value="BATANGAS">BATANGAS</option>
+                      <option value="RIZAL">RIZAL</option>
+                      <option value="QUEZON">QUEZON</option>
+                  </select>
+              </div>
+              
+              <div class="city-dropdown">
+                  <span>SELECT A CITY/MUNICIPALITY</span>
+                  <select name="city-dropdown2" id="place-select2">
+                      <option value="">Select a City/Municipality</option>
+                  </select>
+              </div>
+             </div>
+           </div>
+
+            <br>
+            <div class="container2">
+              <p class="title">FATHER'S NAME
+                  <span class="italic"><i>(Family name, First name, Middle name) indicate even if deceased</i></span>
+              </p>
+            </div>
+              
+              
+            <div class="container">
+              <div class="row">
+                  
+                      <label for="lastnamefather">LASTNAME</label>
+                      <input type="text" id="lastnamefather" name="lastnamefather">
+                  
+                      <label for="firstnamefather">FIRSTNAME</label>
+                      <input type="text" id="firstnamefather" name="firstnamefather">
+                  
+                      <label for="middlenamefather">MIDDLENAME</label>
+                      <input type="text" id="middlenamefather" name="middlenamefather">
+                  
+              </div>
+          </div>
+          <br>
+              <div class="container">
+                <p class="title">MOTHER'S NAME
+                    <span class="italic"><i>(Family name, First name, Middle name) indicate even if deceased</i></span>
+                </p>
+              </div>
+                
+              <br>
+              <div class="container">
+                <div class="row">
+                    
+                        <label for="lastnamemother">LASTNAME</label>
+                        <input type="text" id="lastnamemother" name="lastnamemother">
+                    
+                        <label for="firstnamemother">FIRSTNAME</label>
+                        <input type="text" id="firstnamemother" name="firstnamemother">
+                    
+                        <label for="middlenamemother">MIDDLENAME</label>
+                        <input type="text" id="middlenamemother" name="middlenamemother">
+                    
+                </div>
+            </div>
+            <br>
+
+                <div class="container">
+                  <p class="title">SPOUSE NAME
+                      <span class="italic"><i>(Family name, First name, Middle name) indicate even if deceased</i></span>
+                  </p>
+                </div>
+                  
+                  
+                <div class="container">
+                  <div class="row">
+                      
+                          <label for="lastnamespouse">LASTNAME</label>
+                          <input type="text" id="lastnamespouse" name="lastnamespouse">
+                      
+                          <label for="firstnamespouse">FIRSTNAME</label>
+                          <input type="text" id="firstnamespouse" name="firstnamespouse">
+                      
+                          <label for="middlenamespouse">MIDDLENAME</label>
+                          <input type="text" id="middlenamespouse" name="middlenamespouse">
+                      
+                  </div>
+              </div><br>
+    
+                  <br><hr><br>
+          <div class="container">
+            <div class="employer">
+            <p><b>EMPLOYER BUSINESS NAME</b>
+                <div><label for="employerbusinessname"></label><br><input type="text" id="businessname" name="businessname"></div>
+                <div><label for="businessnumber">Tel No.</label><br><input type="text" id="businessnumber" name="businessnumber"></div>
+            </div>
+    
+            <div class="centered-container">
+              <div class="container">
+                  <p><b>BUSINESS ADDRESS</b><i>(City/Municipality, Province)</i></p>
+              </div>
+  
+              <div class="dropdown-container">
+                <div class="province-dropdown">
+                    <span>SELECT A PROVINCE</span>
+                    <select name="province-dropdown3" id="province-dropdown3" onchange="showPlacesDropdown('province-dropdown3', 'place-select3')">
+                        <option value="">Select a Region</option>
+                        <option value="NCR">METRO-MANILA</option>
+                        <option value="CAVITE">CAVITE</option>
+                        <option value="LAGUNA">LAGUNA</option>
+                        <option value="BATANGAS">BATANGAS</option>
+                        <option value="RIZAL">RIZAL</option>
+                        <option value="QUEZON">QUEZON</option>
+                    </select>
+                </div>
+                
+                <div class="city-dropdown">
+                    <span>SELECT A CITY/MUNICIPALITY</span>
+                    <select name="city-dropdown3" id="place-select3">
+                        <option value="">Select a City/Municipality</option>
+                    </select>
+                </div>
+               </div>
+             </div>
+  
+        </div>
+      </div>
+      <br><hr><br>
+                <div class="fillheader"><h5>FILL THIS UP ONLY IF YOUR NAME <br>
+                  ABOVE IS DIFFERENT FROM YOUR NAME<br>
+                   IN PREVIOUS LICENSE</h5>
+             </div>
+             <div class="container">
+                 <div class="row">
+                     
+                         <label for="Lastnameprev">LASTNAME</label>
+                         <input type="text" id="Lastnameprev" name="Lastnameprev">
+                     
+                         <label for="Firstnameprev">FIRSTNAME</label>
+                         <input type="text" id="Firstnameprev" name="Firstnameprev">
+                     
+                         <label for="Middlenameprev">MIDDLENAME</label>
+                         <input type="text" id="Middlenameprev" name="Middlenameprev">
+                     
+                 </div>
+             </div>
+             <br><hr class="line">
+            
+ 
+             <div class="signaturecert">
+                 <h5>THIS IS TO CERTIFY<br>
+                      THAT  THE INFORMATION<br>
+                       I HAVE GIVEN IS TRUE AND CORRECT.</h5>
+                 <div>
+                 <label for="signaturecert"></label><br>
+                  <input type="text" id="signaturecert" name="signaturecert" class="signature" placeholder="SIGNATURE HERE">
+                  </div>
+             </div>
+             <div class=submit><input type="submit" value="Next">
+             </div>
+
+    <script>
+        var cityPlaces = {
+            "NCR": ["CALOOCAN SOUTH", "CALOOCAN NORTH", "LAS PINAS", "MAKATI", "MALABON", "MANDALUYONG", "MANILA", "MARIKINA", "MUNTINLUPA", "NAVOTAS", "PARANAQUE", "PASAY", "PASIG", "PATEROS", "QUEZON CITY", "SAN JUAN", "TAGUIG", "VALENZUELA"],
+            "RIZAL": ["ANTIPOLO", "BINANGONAN", "RODRIGUEZ", "JALA-JALA", "TANAY", "PASIG", "SANTO DOMINGO", "MORONG", "TAYTAY", "PILILLA", "ANGONO", "CARDONA", "RIZAL", "MARIKINA", "SAN MATEO", "CAINTA", "BARAS", "TERESA"],
+            "CAVITE": ["CAVITE CITY", "KAWIT", "NOVELOTA", "ROSARIO", "BACOOR", "IMUS", "DASMARINAS", "CARMONA", "SILANG", "GENERAL MARIANO ALVAREZ", "GENERAL TRIAS", "AMADEO", "INDANG", "TANZA", "TRECE MARTIRES CITY", "TAGAYTAY CITY", "ALFONSO", "GENERAL EMILIO AGUINALDO", "MAGALLANES", "MARAGONDON", "MENDEZ", "NAIC", "TERNATE"],
+            "LAGUNA": ["CALAMBA", "LUISIANA", "BAY", "LUMBAN", "ALAMINOS", "SAN PABLO", "PILA", "CAVINTI", "MABITAC", "LOS BANOS", "SANTA ROSA", "BINAN", "PANGIL", "NAGCARLAN", "FAMY", "SAN PEDRO", "KALAYAAN", "CABUYAO", "CALAUAN", "VICTORIA", "PAGSANJAN", "RIZAL", "MAJAYJAY", "SANTA CRUZ", "LILIW", "PAETE", "SINILOAN", "PAKIL", "MAGDALENA", "SANTA MARIA", "CANLUBANG", "KAY-ANLOG, CALAMBA", "PUNTA", "TURBINA", "MAKILING", "PARIAN", "SANTO ANGEL", "DEL REMEDIO", "BANILAN", "MALITLIT", "MAMATID", "REAL"],
+            "QUEZON": ["AGDANGAN", "ALABAT", "BUENAVISTA", "BURDEOS", "CALAUAG", "CANDELARIA", "CATANAUAN", "DOLORES", "GENERAL LUNA", "GENERAL NAKAR", "GUINAYANGAN", "GUMACA", "INFANTA", "JOMALIG", "LOPEZ", "LUCBAN", "MACALELON", "MAUBAN", "MULANAY", "PADRE BURGOS", "PAGBILAO", "PANUKULAN", "PATNANUNGAN", "PEREZ", "PITOGO", "PLARIDEL", "POLILO", "QUEZON", "REAL", "SAMPALOC", "SAN ANDRES", "SAN ANTONIO", "SAN FRANCISCO", "SAN NARCISO", "SARIAYA", "TAGKAWAYAN", "TIAONG", "UNISAN"],
+            "BATANGAS": ["AGONCILLO", "ALITAGTAG", "BALAYAN", "BALETE", "BATANGAS", "BAUAN", "CALACA", "CALATAGAN", "CUENCA", "IBAAN", "LAUREL", "LEMERY", "LIAN", "LIPA", "LOBO", "MABINI", "MALVAR", "MATAASNAKAHOY", "NASUGBU", "PADRE GARCIA", "ROSARIO", "SAN JOSE", "SAN LUIS", "SAN NICOLAS", "SAN PASCUAL", "SANTA TERESITA", "SANTO TOMAS", "TAAL", "TALISAY", "TANAUAN", "TAYSAN", "TINGLOY", "TUY"]
+        };
+
+        cityPlaces["CAVITE"].sort();
+        cityPlaces["LAGUNA"].sort();
+        cityPlaces["BATANGAS"].sort();
+        cityPlaces["RIZAL"].sort();
+        cityPlaces["QUEZON"].sort();
+
+        function showPlacesDropdown(provinceDropdownId, placeSelectId) {
+            var provinceDropdown = document.getElementById(provinceDropdownId);
+            var placeSelect = document.getElementById(placeSelectId);
+            var selectedCity = provinceDropdown.value;
+
+            placeSelect.innerHTML = '<option value="">Select a City/Municipality</option>';
+
+            if (selectedCity !== "") {
+                var places = cityPlaces[selectedCity];
+                for (var i = 0; i < places.length; i++) {
+                    var option = document.createElement("option");
+                    option.value = places[i];
+                    option.textContent = places[i];
+                    placeSelect.appendChild(option);
+                }
+            }
+        }
+    </script>
+
+
+
+
+  </form>
+  
+    </body>
+</html>
